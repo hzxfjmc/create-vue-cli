@@ -1,19 +1,26 @@
+#!/usr/bin/env node
+
 const fs = require('fs')
 const program = require('commander')
-const chalk = require('chalk')   // 标注颜色的
-const download = require('download-git-repo')  // 从git拉取代码模板
-const inquirer = require('inquirer')  //命令行里的选择
+const chalk = require('chalk')
+const download = require('download-git-repo')
+const inquirer = require('inquirer')
 const ora = require('ora')
+const symbols = require('log-symbols')
 const handlebars = require('handlebars')
-
 
 program
   .version(require('./package').version, '-v, --version')
   .command('init <name>')
   .action((name) => {
-      console.log(name)
     if (!fs.existsSync(name)) {
       inquirer.prompt([
+        {
+          name: 'templateType',
+          message: 'which template type you need to create?',
+          type: 'list',
+          choices: ['webpack', 'rollup'],
+        },
         {
           name: 'description',
           message: 'please enter a description:',
@@ -24,19 +31,21 @@ program
         }
       ]).then((answers) => {
         console.log(answers)
+        // start to download
         const spinner = ora('downloading template...')
         spinner.start()
-        // 从git拉取代码路径
-        const downloadPath = `direct:https://github.com/hzxfjmc/vue-template-project.git#main`
+        const downloadPath = `direct:https://github.com/LuckyWinty/${answers.templateType}-project-template.git#master`
         download(downloadPath,
-            name, { clone: true }, (err) => {
+          name, { clone: true }, (err) => {
             if (err) {
               spinner.fail()
+              console.error(symbols.error,
+                chalk.red(`${err}download template fail,please check your network connection and try again`))
               process.exit(1)
             }
             spinner.succeed()
             const meta = {
-                name,
+              name,
               description: answers.description,
               author: answers.author,
             }
@@ -48,8 +57,7 @@ program
       })
     } else {
       // 错误提示项目已存在，避免覆盖原有项目
-      console.log('项目名字已经存在')
-      chalk.red('project had exist')
+      console.error(symbols.error, chalk.red('project had exist'))
     }
   }).on('--help', () => {
     console.log('  Examples:')
@@ -58,4 +66,3 @@ program
   })
 
 program.parse(process.argv)
-
