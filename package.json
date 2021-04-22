@@ -1,0 +1,26 @@
+{
+  "name": "create-vue-cli",
+  "version": "1.0.0",
+  "description": "tool",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-vue-cli": "main.js"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "hzxfjmc",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "commander": "^7.2.0",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.0.0",
+    "log-symbols": "^5.0.0",
+    "ora": "^5.4.0"
+  }
+}

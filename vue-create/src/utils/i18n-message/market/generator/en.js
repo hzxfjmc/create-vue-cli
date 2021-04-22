@@ -1,0 +1,20 @@
+export const en = {
+    errorTips: 'Network error, please try again',
+    isSolved: 'Was this information helpful?',
+    solved: 'Yes',
+    unSolve: 'No',
+    reasons: 'Reason',
+    otherReason: 'Other',
+    inputAdvise: 'Let us know your question or suggestion',
+    contact: 'Contact Number',
+    cancel: 'Cancel',
+    submit: 'Submit',
+    optional: 'Optional, for contact purposes',
+    reason1: `Can't find what I want`,
+    reason2: 'The guidelines do not match the actual operation',
+    reason3: 'Description is too complicated',
+    reason4: 'Description is too abstract, difficult to understand',
+    reason5: 'Unreasonable rule',
+    thanks: 'Thank you for your feedback',
+    kindly: 'Tips:'
+}

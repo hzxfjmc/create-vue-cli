@@ -1,0 +1,7 @@
+node_modules/*
+vue.config.js
+postcss.config.js
+build/
+babel.config.js
+utils/third-party/*
+src/components/upload/cosAuth.js

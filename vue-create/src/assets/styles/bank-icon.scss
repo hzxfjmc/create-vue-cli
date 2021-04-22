@@ -1,0 +1,126 @@
+.bank-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.bank-bg {
+    width: 41px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+}
+.bank-icon {
+    width: 41px;
+    height: 41px;
+}
+.m-bank-icon {
+    width: 22px;
+    height: 22px;
+}
+.bank-bdn {
+    border: none;
+}
+.bg-gongshang {
+    background: linear-gradient(
+        135deg,
+        rgba(226, 47, 47, 1) 0%,
+        rgba(182, 15, 28, 1) 100%
+    );
+}
+.bg-zhaoshang {
+    background: linear-gradient(
+        135deg,
+        rgba(205, 60, 60, 1) 0%,
+        rgba(185, 2, 16, 1) 100%
+    );
+}
+.bg-mingsheng {
+    background: linear-gradient(
+        315deg,
+        rgba(19, 142, 80, 1) 0%,
+        rgba(21, 135, 78, 1) 0%,
+        rgba(26, 122, 74, 1) 0%,
+        rgba(55, 156, 106, 1) 100%
+    );
+}
+.bg-other {
+    background: linear-gradient(
+        135deg,
+        rgba(226, 47, 47, 1) 0%,
+        rgba(182, 15, 28, 1) 100%
+    );
+}
+
+.bank-item.bdr-n {
+    border-radius: 6px 6px 0 0;
+}
+.bank-item {
+    overflow: hidden;
+    position: relative;
+    .bank-content {
+        position: absolute;
+        z-index: 2;
+    }
+    .bank-inner-bg {
+        position: absolute;
+        z-index: 1;
+        width: 130px;
+        height: 130px;
+        right: -22px;
+        bottom: -19px;
+    }
+    height: 130px;
+    border-radius: 6px;
+    opacity: 0.8;
+    .inner {
+        padding: 17px 16px;
+    }
+
+    .bank-title {
+        margin-left: 10px;
+
+        .big {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            line-height: 25px;
+        }
+
+        .small {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 17px;
+        }
+
+        .bank-code {
+            margin-top: 14px;
+            font-size: 26px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            line-height: 33px;
+        }
+    }
+}
+
+@each $bankName in zhongxin, jianshe, zhongguo, jiaotong, mingsheng, gongshang,
+    zhaoshang, fps, other
+{
+    .bank-icon-#{$bankName} {
+        background: url('/webapp/open-account/open-account/bank-icon/#{$bankName}@2x.png');
+        background-size: cover;
+    }
+}
+
+@each $bankBgName in zhongxin, mingsheng, gongshang, zhaoshang {
+    .bank-bg-#{$bankBgName} {
+        background-image: url('/webapp/open-account/open-account/bank-bg/#{$bankBgName}2@2x.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}

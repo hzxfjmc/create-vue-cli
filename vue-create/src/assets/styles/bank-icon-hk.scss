@@ -1,0 +1,261 @@
+.bank-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.bank-bg {
+    width: 41px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+}
+.bank-icon {
+    width: 41px;
+    height: 41px;
+}
+.m-bank-icon {
+    width: 22px;
+    height: 22px;
+}
+.bank-bdn {
+    border: none;
+}
+.bg-zhongguo {
+    background: linear-gradient(
+        135deg,
+        rgba(165, 0, 0, 1) 0%,
+        rgba(162, 0, 6, 1) 100%
+    );
+    opacity: 0.6978;
+}
+.bg-gongshang {
+    background: linear-gradient(
+        135deg,
+        rgba(226, 47, 47, 1) 0%,
+        rgba(182, 15, 28, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-zhaoshang {
+    background: linear-gradient(
+        135deg,
+        rgba(205, 60, 60, 1) 0%,
+        rgba(185, 2, 16, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-dongya {
+    background: linear-gradient(
+        128deg,
+        rgba(204, 44, 44, 1) 0%,
+        rgba(202, 24, 46, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-nanyangshangye {
+    background: linear-gradient(
+        134deg,
+        rgba(208, 46, 63, 1) 0%,
+        rgba(200, 22, 35, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-zhongxin {
+    background: linear-gradient(
+        135deg,
+        rgba(194, 39, 39, 1) 0%,
+        rgba(212, 0, 8, 1) 100%
+    );
+    opacity: 0.7;
+}
+.bg-huaqiao {
+    background: linear-gradient(
+        129deg,
+        rgba(214, 78, 78, 1) 0%,
+        rgba(242, 0, 19, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-xingzhan {
+    background: linear-gradient(
+        135deg,
+        rgba(228, 39, 39, 1) 0%,
+        rgba(202, 9, 35, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-yonglong {
+    background: linear-gradient(
+        134deg,
+        rgba(229, 71, 71, 1) 0%,
+        rgba(207, 0, 16, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-huifeng {
+    background: linear-gradient(
+        133deg,
+        rgba(222, 72, 72, 1) 0%,
+        rgba(214, 26, 26, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-daxin {
+    background: linear-gradient(
+        315deg,
+        rgba(169, 0, 23, 1) 0%,
+        rgba(212, 35, 68, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-hengsheng {
+    background: linear-gradient(
+        135deg,
+        rgba(213, 62, 78, 1) 0%,
+        rgba(203, 0, 22, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-jiyou {
+    background: linear-gradient(
+        315deg,
+        rgba(169, 0, 23, 1) 0%,
+        rgba(212, 35, 68, 1) 100%
+    );
+    border-radius: 6px;
+    opacity: 0.8;
+}
+.bg-mingsheng {
+    background: linear-gradient(
+        315deg,
+        rgba(19, 142, 80, 1) 0%,
+        rgba(21, 135, 78, 1) 0%,
+        rgba(26, 122, 74, 1) 0%,
+        rgba(55, 156, 106, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-zhada {
+    background: linear-gradient(
+        134deg,
+        rgba(86, 168, 151, 1) 0%,
+        rgba(36, 168, 104, 1) 100%
+    );
+    opacity: 0.8484999999999999;
+}
+.bg-jiaotong {
+    background: linear-gradient(
+        135deg,
+        rgba(42, 88, 180, 1) 0%,
+        rgba(22, 52, 132, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-jianshe {
+    background: linear-gradient(
+        134deg,
+        rgba(43, 99, 179, 1) 0%,
+        rgba(0, 62, 149, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-huaqi {
+    background: linear-gradient(
+        135deg,
+        rgba(87, 122, 205, 1) 0%,
+        rgba(0, 89, 177, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-chuangxin {
+    background: linear-gradient(
+        135deg,
+        rgba(248, 160, 62, 1) 0%,
+        rgba(251, 94, 28, 1) 100%
+    );
+    opacity: 0.8;
+}
+.bg-other {
+    background: linear-gradient(
+        135deg,
+        rgba(226, 47, 47, 1) 0%,
+        rgba(182, 15, 28, 1) 100%
+    );
+}
+
+.bank-item.bdr-n {
+    border-radius: 6px 6px 0 0;
+}
+.bank-item {
+    overflow: hidden;
+    position: relative;
+    .bank-content {
+        position: absolute;
+        z-index: 2;
+    }
+    .bank-inner-bg {
+        position: absolute;
+        z-index: 1;
+        width: 130px;
+        height: 130px;
+        right: -22px;
+        bottom: -19px;
+    }
+    height: 130px;
+    border-radius: 6px;
+    .inner {
+        padding: 17px 16px;
+    }
+
+    .bank-title {
+        margin-left: 10px;
+
+        .big {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            line-height: 25px;
+        }
+
+        .small {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 17px;
+        }
+
+        .bank-code {
+            margin-top: 14px;
+            font-size: 26px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            line-height: 33px;
+        }
+    }
+}
+
+@each $bankName in zhongxin, jianshe, zhongguo, jiaotong, mingsheng, gongshang,
+    zhaoshang, chuangxin, daxin, dongya, hengsheng, huaqi, huaqiao, huifeng,
+    jiyou, nanyangshangye, xingzhan, yonglong, zhada, fps, other
+{
+    .bank-icon-#{$bankName} {
+        background: url('/webapp/open-account/open-account/bank-icon/#{$bankName}@2x.png');
+        background-size: cover;
+    }
+}
+
+@each $bankBgName in zhongxin, jianshe, zhongguo, jiaotong, mingsheng, gongshang,
+    zhaoshang, chuangxin, daxin, dongya, hengsheng, huaqi, huaqiao, huifeng,
+    jiyou, nanyangshangye, xingzhan, yonglong, zhada
+{
+    .bank-bg-#{$bankBgName} {
+        background-image: url('/webapp/open-account/open-account/bank-bg/#{$bankBgName}2@2x.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}

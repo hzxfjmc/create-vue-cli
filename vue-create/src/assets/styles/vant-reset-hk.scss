@@ -1,0 +1,48 @@
+#app {
+    .van-cell__title {
+        color: $hk-text-color;
+    }
+    .van-cell__value {
+        color: $hk-text-color;
+    }
+}
+body {
+  $disabled: #DADADA;
+  .van-dialog {
+    width: 335px !important;
+    border-radius:10px;
+    .van-button {
+      font-size: 16px;
+    }
+  }
+  .van-button--primary{
+    background-color:$hk-primary-color
+  }
+  .van-notify {
+    width:339px;
+    height:32px;
+    border-radius:16px;
+    font-size:14px;
+    font-family:PingFangHK-Regular;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:20px;
+    top: 0;
+  }
+  .van-cell__title {
+    color: $hk-text-color6;
+  }
+  .van-cell__value {
+    color: $text-color;
+  }
+  .van-dialog__confirm {
+    color: $hk-primary-color;
+  }
+}
+
+body[data-theme="pro-theme"] {
+    .van-button--primary {
+        background: $primary-pro-color;
+        border: none;
+    }
+}

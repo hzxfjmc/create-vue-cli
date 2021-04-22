@@ -1,0 +1,20 @@
+export const zhCHS = {
+    errorTips: '网络开小差了，请稍后重试',
+    isSolved: '以上内容是否解决了您的疑惑？',
+    solved: '已解决',
+    unSolve: '未解决',
+    reasons: '具体原因',
+    otherReason: '其他原因',
+    inputAdvise: '请输入您的问题或建议',
+    contact: '联系方式',
+    cancel: '取消',
+    submit: '提交',
+    optional: '选填，请留下电话以便我们更好的帮助您',
+    reason1: '找不到我想看的内容',
+    reason2: '指引与实际操作不符合',
+    reason3: '描述太复杂',
+    reason4: '描述的太抽象，难以理解',
+    reason5: '规则操作不合理',
+    thanks: '感谢您的反馈',
+    kindly: '温馨提示：'
+}
