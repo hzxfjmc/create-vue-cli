@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs')
 const program = require('commander')
 const chalk = require('chalk')   // 标注颜色的
