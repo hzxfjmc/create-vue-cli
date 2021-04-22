@@ -1,5 +1,5 @@
 {
-  "name": "create-vue-cli",
+  "name": "create-vue-template-cli",
   "version": "1.0.0",
   "description": "tool",
   "main": "main.js",
@@ -13,6 +13,7 @@
     "vue"
   ],
   "author": "hzxfjmc",
+  "repository": { "type": "git", "url": "https://github.com/hzxfjmc/create-vue-cli.git" },
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
