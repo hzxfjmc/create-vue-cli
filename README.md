@@ -1,4 +1,4 @@
-# create-vue-template-cli
+# create-repo-cli
 A cli to create project quickly...
 
 ## install global
@@ -7,7 +7,7 @@ A cli to create project quickly...
 
 ## create webpack project
 
-1.create-vue init [project-name]
+1. create-repo init [project-name]
 2. cd [project-name]
 3. run `yarn && yarn start`
 
