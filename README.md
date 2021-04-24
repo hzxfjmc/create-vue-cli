@@ -1,20 +1,13 @@
-# create-repo-cli
+# create-vue-template-cli
 A cli to create project quickly...
 
 ## install global
 
-`sudo npm install create-repo-cli -g`
+`sudo npm install create-vue-template-cli -g`
 
 ## create webpack project
 
-1. create-repo init [project-name]
-2. choose webpack template type
+1.create-vue init [project-name]
+2. cd [project-name]
 3. run `yarn && yarn start`
 
-## create rollup project
-
-1. create-repo init <project-name>
-2. choose rollup template type
-3. run `yarn`    
-4. cd src/[component-name]
-5. run `yarn start`
